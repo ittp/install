@@ -3,12 +3,22 @@
 getOS() {
   uname -a 
 }
+
 init() {
  echo "init"
+ mkdir -p ~/installer/config/
  
 }
+
+configure() {
+  config=${INSTALLER_CONFIG}
+  echo $config
+}
+
 ubuntu() {
   echo "ubuntu installer"
+  export INSTALLER="ubuntu"
+  export INSTALLER_CONFIG="ubuntu.config.yaml"
 }
 debian() {
   
