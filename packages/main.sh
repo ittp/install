@@ -39,4 +39,23 @@ windows() {
 }
 
 
+
+# get_package_config [package_name]
+get_package_config() {
+  package_name=$1
+  file=`./packages/$OS/$ARCH/$PACKAGE`
+  cat ${file}
+  return $file
+}
+
+download() {
+  URL=$1
+  C=ARRAY("curl wget")
+  echo $C[1]
+  curl -sL $url | bash -
+}
+
+alias get=/scripts/download.sh
+
+
 'curl -sL https://deb.nodesource.com/setup_lts.x | bash -'
