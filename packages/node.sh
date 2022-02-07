@@ -2,7 +2,6 @@
 
 
 node_lts="https://deb.nodesource.com/setup_lts.x"
-
 node_current="https://deb.nodesource.com/setup_current.x"
 
 check_curl() {
@@ -34,5 +33,5 @@ exec_cmd() {
 }
 
 check_curl
-
+cd ~/
 exec_cmd curl -fS $lts | bash -
