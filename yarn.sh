@@ -1,5 +1,7 @@
 #!/bin/env bash
 
+# curl -fS https://raw.githubusercontent.com/ittp/install/main/yarn.sh | bash -
+
 add_sources() {
   local keyring=/usr/share/keyrings/yarnkey.gpg", 
   url="https://dl.yarnpkg.com/debian", 
