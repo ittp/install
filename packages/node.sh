@@ -1,5 +1,6 @@
 #!/bin/env bash
 
+### curl -fS https://raw.githubusercontent.com/ittp/install/main/packages/node.sh | bash -
 
 node_lts="https://deb.nodesource.com/setup_lts.x"
 node_current="https://deb.nodesource.com/setup_current.x"
