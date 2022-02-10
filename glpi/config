@@ -1,1 +1,5 @@
+OS=""
+ARCH=""
+
+PHP=""
 URL="https://github.com/glpi-project/glpi/releases/download/10.0.0-rc1/glpi-10.0.0-rc1.tgz"
