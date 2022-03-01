@@ -1,0 +1,5 @@
+{
+ "ProxyMode": "fixed_servers",
+ "ProxyServer": "proxy",
+ "ProxyBypassList": ".spb,.app,.local"
+}
