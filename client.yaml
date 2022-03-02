@@ -1,0 +1,26 @@
+openvpn:
+  ows:
+    type: client
+    proto: udp
+    dev: tun
+    explicit-exit-notify: true
+    remote: 195.2.73.92 1194
+
+    resolv-retry infinite
+    nobind: true
+    persist-key: true
+    persist-tun: true
+    remote-cert-tls: server
+    verify-x509-name: server_z2Y4ZWSX3JTkA3xM name
+    auth: SHA256
+    auth-nocache: true
+    cipher: AES-256-CBC
+    tls-client: true
+    tls-version-min: 1.2
+    tls-cipher: TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256
+    verb: 3
+  #ignore-unknown-option block-outside-dns
+  #setenv opt block-outside-dns # Prevent Windows 10 DNS leak
+
+
+  #up: /etc/openvpn/up
